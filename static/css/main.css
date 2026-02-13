@@ -1,0 +1,76 @@
+body {
+    background: linear-gradient(to bottom, #2b5876, #4e4376, #00BFFF); /* Градиент от тёмно-синего к бирюзовому */
+    min-height: 100vh;
+    color: white; /* Белый текст для контраста */
+}
+
+.container {
+    background: rgba(43, 88, 118, 0.8); /* Полупрозрачный синий фон для читаемости */
+    backdrop-filter: blur(10px); /* Размытие для эффекта воды */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 191, 255, 0.3); /* Тень в цвете воды */
+}
+
+/* HERDER */
+.header__img {
+    height: 74px;
+    width: 74px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #00BFFF, #1E90FF);
+    border: none;
+}
+
+.btn-outline-primary {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #1E90FF, #00BFFF);
+}
+
+@keyframes wave {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.container {
+    animation: wave 6s ease-in-out infinite;
+}
+
+/* В самом конце main.css */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e9f3ff;
+}
+
+/* Для контента внутри .container, если надо перебить ещё сильнее */
+.container {
+    color: #e9f3ff;
+}
+
+h1, h2, h3 {
+    color: #ffffff;
+}
+
+
+
+
