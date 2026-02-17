@@ -54,7 +54,6 @@ header {
     animation: wave 6s ease-in-out infinite;
 }
 
-/* В самом конце main.css */
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 16px;
@@ -70,7 +69,4 @@ body {
 h1, h2, h3 {
     color: #ffffff;
 }
-
-
-
 
