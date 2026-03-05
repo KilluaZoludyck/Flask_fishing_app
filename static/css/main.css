@@ -45,6 +45,7 @@ header {
     background: linear-gradient(45deg, #1E90FF, #00BFFF);
 }
 
+
 @keyframes wave {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
@@ -70,3 +71,111 @@ h1, h2, h3 {
     color: #ffffff;
 }
 
+
+
+/* CREATE WINDOW */
+.article-create {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px 32px;
+    background: rgba(10, 30, 48, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.article-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.article-form .form-label {
+    color: #e9f3ff;
+    margin-bottom: 6px;
+}
+
+.article-form .form-control {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.article-form .form-control:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 191, 255, 0.25);
+    outline: none;
+}
+
+
+/* POSTS PREV LIMIT */
+.post-preview {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;      /* сколько строк показывать */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 6.8em;          /* подгон под высоту 5 строк */
+}
+
+
+/* ONE POST F-STRINGS */
+.post-body {
+    white-space: pre-wrap;
+}
+
+
+/* LOGIN AND REGISTER */
+.auth-card {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 28px 32px;
+    background: rgba(10, 30, 48, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}
+
+.auth-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.auth-form .form-label {
+    color: #e9f3ff;
+    margin-bottom: 4px;
+}
+
+.auth-form .form-control {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+.auth-form .form-control:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 0 0.16rem rgba(0, 191, 255, 0.35);
+}
+
+.auth-footer-text {
+    margin-top: 14px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.auth-footer-text a {
+    color: #4fd2ff;
+}
+
+
+/* LOGOUT BUTTON */
+.btn-logout {
+    color: #dc3545 !important;          /* красный текст */
+    border-color: #dc3545 !important;   /* красная окантовка */
+    background-color: transparent;
+}
+
+.btn-logout:hover {
+    color: #ffffff !important;
+    background-color: #dc3545 !important;
+    border-color: #dc3545 !important;
+}

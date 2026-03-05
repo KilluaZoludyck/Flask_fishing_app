@@ -5,11 +5,25 @@
 {% endblock %}
 
 {% block content %}
-<h1>Создание статьи</h1>
+<div class="article-create">
+    <h1 class="article-title">Создание статьи</h1>
 
-<form method="post" class="form-control">
-    <input type="text" name="title" placeholder="Введите заголовок статьи" class="form-control"><br>
-    <input type="text" name="content" placeholder="Введите текст статьи" class="form-control"><br>
-    <button class="btn btn-success" type="submit">Добавить</button>
-</form>
+    <form method="post" class="article-form">
+        <div class="mb-3">
+            <label for="title" class="form-label">Заголовок статьи</label>
+            <input type="text" id="title" name="title"
+                   class="form-control"
+                   placeholder="Введите заголовок статьи">
+        </div>
+
+        <div class="mb-3">
+            <label for="content" class="form-label">Текст статьи</label>
+            <textarea id="content" name="content" rows="6"
+                      class="form-control"
+                      placeholder="Введите текст статьи"></textarea>
+        </div>
+
+        <button class="btn btn-success" type="submit">Добавить</button>
+    </form>
+</div>
 {% endblock %}

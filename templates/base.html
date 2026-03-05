@@ -25,8 +25,9 @@
                 <li><a href="{{ url_for('about_page') }}" class="nav-link px-2 link-secondary">О сайте</a></li>
             </ul>
             <div class="col-md-3 text-end">
-                <button type="button" class="btn btn-outline-primary me-2">Войти</button>
-                <button type="button" class="btn btn-primary">Зарегистрироваться</button>
+                <a href="{{ url_for('logout') }}" class="btn btn-outline-primary btn-logout me-2">Выйти</a>
+                <a href="{{ url_for('login') }}" class="btn btn-outline-primary me-2">Войти</a>
+                <a href="{{ url_for('register') }}" class="btn btn-primary">Зарегистрироваться</a>
             </div>
         </header>
         {% block content %}{% endblock %}
