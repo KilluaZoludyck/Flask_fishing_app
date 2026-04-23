@@ -15,6 +15,26 @@ app.config['SECRET_KEY'] = 'secret_key'
 db = SQLAlchemy(app)
 
 
+# ---- ПАРСИНГ ДАННЫХ ----
+import requests
+from flask import jsonify
+
+@app.route('/api/fisheries')
+def api_fisheries():
+    url = 'http://openfisheries.org/api/landings.json'
+    try:
+        resp = requests.get(url, timeout=10)
+        resp.raise_for_status()
+        data = resp.json()
+        # можно тут же обрезать/подготовить данные
+        return jsonify(data)
+    except Exception as e:
+        print('Ошибка при запросе OpenFisheries:', e)
+        return jsonify({'error': 'fetch_failed'}), 500
+
+
+# ---- ОСНОВНАЯ ЧАСТЬ ----
+
 class Post(db.Model):
     """ Класс-модель для БД, отвечает за сохранение созданного поста в БД """
     id = db.Column(db.Integer, primary_key=True)

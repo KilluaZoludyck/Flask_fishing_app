@@ -179,3 +179,23 @@ h1, h2, h3 {
     background-color: #dc3545 !important;
     border-color: #dc3545 !important;
 }
+
+
+/* WIDGET */
+.fisheries-widget {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: rgba(10, 30, 48, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #e9f3ff;
+}
+
+.fisheries-title {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+
